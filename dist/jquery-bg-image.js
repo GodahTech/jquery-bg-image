@@ -42,6 +42,9 @@
             img.attr('src', res[1].replace(/["']/gi, ""));
 
         } else {
+            /**
+             * On error
+             */
             console.error("BG Image JS: Image background not set", this);
             return false;
         }
