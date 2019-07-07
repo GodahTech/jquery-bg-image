@@ -1,0 +1,4 @@
+#jQuery BG Image JS - Git Ignore
+
+# Ignore PHPStorm files folder
+.idea/

@@ -1,0 +1,32 @@
+{
+  "name": "jquery-bg-image",
+  "version": "1.0.0",
+  "description": "Get background image and return object",
+  "main": "/dist/jquery-bg-image.js",
+  "directories": {
+    "dist": "dist",
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/godoyrw/jquery-bg-image.git"
+  },
+  "keywords": [
+    "jquery",
+    "javascript",
+    "browser",
+    "library"
+  ],
+  "author": "Godahtech | Soluções Digitais - Roberto W. Godoy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/godoyrw/jquery-bg-image/issues"
+  },
+  "homepage": "https://github.com/godoyrw/jquery-bg-image",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}

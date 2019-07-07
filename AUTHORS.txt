@@ -1,0 +1,6 @@
+Jquery BG Image JS
+Copyright (c) 2019 Godahtech | Soluções Digitais - Roberto W. Godoy
+
+Authors ordered by first contribution.
+
+1) Roberto W. Godoy <godoyrw@gmail.com>

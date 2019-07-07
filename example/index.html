@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery BG Image JS</title>
+
+    <style type="text/css">
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #bg-image {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center top;
+            background-image: url(assets/images/harley-quinn.jpg);
+        }
+
+        #bg-image-output {
+            position: absolute;
+            width: 300px;
+            height: fit-content;
+            background: rgba(255, 255, 255, 0.7);
+            top: 40px;
+            left: 40px;
+            padding: 20px;
+            border: 10px solid #ff0055;
+        }
+
+        #bg-image-output h1,
+        #bg-image-output p {
+            margin: 6px 0;
+        }
+    </style>
+</head>
+<body>
+<div id="bg-image"></div>
+<div id="bg-image-output">
+
+    <h1>jQuery BG Image JS</h1>
+    <p>&nbsp;</p>
+
+    <p class="width">
+        Background width: <span></span>
+    </p>
+    <hr />
+
+    <p class="height">
+        Background height:  <span></span>
+    </p>
+    <hr />
+
+    <p class="src">
+        Background src:  <span></span>
+    </p>
+    <hr />
+</div>
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../dist/jquery-bg-image.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#bg-image").bgImage(function (event) {
+            /**
+             * Event Log
+             */
+            console.log(event);
+
+            /**
+             * Get Object
+             * @type {*|jQuery}
+             */
+            var background_image = $(this).get(0);
+
+            /**
+             * Get width
+             */
+            $(".width").find("span").text(
+                background_image.width
+            );
+
+            /**
+             * Get height
+             */
+            $(".height").find("span").text(
+                background_image.height
+            );
+
+            /**
+             * Get src
+             */
+            $(".src").find("span").text(
+                background_image.src
+            );
+
+        });
+    });
+</script>
+</body>
+</html>
