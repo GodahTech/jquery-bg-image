@@ -2,7 +2,7 @@
  jQuery BG Image JS
  @description Get background image and return object
  @author Godahtech | Soluções Digitais - Roberto W. Godoy | Deus super omnia!
- @version 1.0.0
+ @version 1.0.1
  @url https://github.com/godoyrw/jquery-bg-image
  **/
 (function ($) {
