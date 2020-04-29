@@ -2,7 +2,7 @@
  jQuery BG Image JS
  @description Get background image and return object
  @author Godahtech | Soluções Digitais - Roberto W. Godoy | Deus super omnia!
- @version 1.0.0
+ @version 1.0.1
  @url https://github.com/godoyrw/jquery-bg-image
  **/
 (function ($) {
@@ -22,25 +22,30 @@
         /**
          * Check if is function callback
          */
-        if (typeof callback !== "function") {
-            console.error("BG Image JS: Callback is not a function.", this);
+        if (typeof callback !== 'function') {
+            console.error('BG Image JS: Callback is not a function.', this);
             return false;
         }
 
         var regexp = /url\((.+)\)/i;
-        var res = regexp.exec($(this).css("background-image"));
+        var res = regexp.exec($(this).css('background-image'));
 
         /**
          * On error
          */
         if (res === null) {
-            console.error("BG Image JS: Image background not set.", this);
+            console.error('BG Image JS: Image background not set.', this);
             return false;
         }
 
-        var img = $("<img id='bgImage' alt='BG Image JS' src='#' />");
+        var img = $(document.createElement('img'), {
+            id: 'bgImage',
+            alt:'BG Image JS',
+            src: '#'
+        });
+        
         img.hide();
-        img.bind("load", function (event) {
+        img.bind('load', function (event) {
             callback.call(this, event);
             img.remove();
         });
