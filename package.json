@@ -4,7 +4,6 @@
   "description": "Get background image and return object",
   "main": "/dist/jquery-bg-image.js",
   "directories": {
-    "dist": "dist",
     "example": "example"
   },
   "scripts": {
@@ -12,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/godoyrw/jquery-bg-image.git"
+    "url": "git+https://github.com/godoyrw/jquery-bg-image.git"
   },
   "keywords": [
     "jquery",

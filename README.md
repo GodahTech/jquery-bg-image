@@ -1,12 +1,17 @@
 # Jquery BG Image JS
-<p>Get background image and return object</p>
-<p>Author Godahtech | Soluções Digitais - Roberto W. Godoy</p>
+<p>Retorna a imagem de background de qualquer elemento como um objeto. | Returns the background image of any element as an object.</p>
+<p>Godahtech | Soluções Digitais - Roberto Godoy</p>
 <b>Version 1.0.0</b>
 
 # Zero Vulnerabilidades
 [![Known Vulnerabilities](https://snyk.io/test/github/godoyrw/jquery-bg-image/badge.svg?targetFile=package.json)](https://snyk.io/test/github/godoyrw/jquery-bg-image?targetFile=package.json) 
 
-## Usage:
+
+# Instalação
+npm i jquery-bg-image --save
+
+
+## Usando:
 
 #### HTML
 ```html
