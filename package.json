@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/godoyrw/jquery-bg-image",
   "dependencies": {
-    "jquery": "^3.5.0"
-  }
+sssssssssssssssssssssssssssssssssssssssssss    "jquery": "^3.5.1"
+  },
+  "devDependencies": {}
 }
